@@ -3,6 +3,10 @@
   <head>
     <title>Corp Event</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -23,17 +27,32 @@
     <div class="main-content">
       <img src="assets/Image-winner.png" alt="Winner Image" />
       <div>
-        <h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <div id="lower">
+            <input type="checkbox" /><label for="checkbox"
+              >Keep me logged in</label
+            >
+            <input type="submit" value="Sign In" />
+          </div>
+          <!--/ lower-->
+          
+        </form>
+
+        <!-- <h2>
           Email
         </h2>
         <h2>
           Password
         </h2>
         <p>Forgot your password?</p>
-        <button class="sign-in">Sign In</button>
+        <button class="sign-in">Sign In</button> -->
       </div>
     </div>
-    <footer>
+    <div class="ce-desription">
       <p>
         Corporate Event Planner helps you organize, track, and collaborate your
         event plans.
@@ -44,6 +63,60 @@
         <br />
         Sign Up
       </p>
-    </footer>
+    </div>
+
+    <div class="card2">
+      <div class="landing-content">
+        <img src="assets/Icons/paperclip.png" alt="Paper Clip" />
+        <h2>
+          Organized Event Details
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="organized-image">
+        <img src="assets/Image-schedule.png" alt="Calendar" />
+      </div>
+    </div>
+    <div class="card3">
+      <div>
+        <img src="assets/Image-stats.png" alt="Stats" />
+      </div>
+
+      <div class="landing-content">
+        <img src="assets/Icons/tasks.png" alt="Tasks" />
+        <h2>
+          Easy to Track
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+
+    <div class="card4">
+      <div class="landing-content">
+        <img src="assets/Icons/comments-alt.png" alt="Comments" />
+        <h2>
+          Collaborate with People
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div>
+        <img src="assets/Image-collaborate.png" alt="Collab" />
+      </div>
+    </div>
   </body>
 </html>

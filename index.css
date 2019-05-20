@@ -127,7 +127,67 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  font-family: "Open Sans";
+}
 
 .header {
   display: flex;
+  max-width: 120%;
+}
+
+nav {
+  margin-top: 2%;
+  margin-left: 28%;
+}
+nav a {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16pt;
+  color: #aaa6fc;
+  padding: 0 30px 0px;
+}
+
+h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  color: #5c6370;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.ce-desription {
+  display: flex;
+}
+
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  align-items: center;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+}
+
+.landing-content img {
+  margin-top: 20%;
+}
+
+.landing-content h2 {
+  margin-top: 10%;
+}
+
+.landing-content p {
+  margin-top: 10%;
+  width: 55%;
 }
