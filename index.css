@@ -287,3 +287,17 @@ footer p {
   margin-left: 60%;
   margin-top: 10%;
 }
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.sign-in {
+  position: relative;
+}
+.sign-in h1 {
+  position: absolute;
+  top: 0;
+  padding-left: 30%;
+}
