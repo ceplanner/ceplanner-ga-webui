@@ -220,10 +220,29 @@ h3 {
 form {
   display: flex;
   flex-direction: column;
+  margin-left: 20%;
 }
 
 .ce-desription {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.brief-description {
+  width: 40%;
+}
+
+.ce-desription .no-account {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16pt;
+  color: #aaa6fc;
+}
+
+.no-account p {
+  margin-left: 75%;
 }
 
 .card2,
