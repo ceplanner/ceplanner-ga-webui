@@ -213,6 +213,7 @@ body .team-member-open {
 }
 body {
   font-family: "Open Sans";
+  background-color: #f0feff;
 }
 body h1 {
   font-size: 35pt;
@@ -247,7 +248,6 @@ body h3 {
 }
 body .header {
   display: flex;
-  width: 120%;
 }
 @media (max-width: 500px) {
   body .header .logo {
@@ -283,137 +283,220 @@ body .header nav a {
     font-size: 10pt;
   }
 }
-body .four-cards {
-  max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-@media (max-width: 500px) {
-  body .four-cards {
-    max-width: 100%;
-  }
-}
-body .four-cards .sign-in {
+body .master-div {
   display: flex;
+}
+body .master-div .four-cards {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  font-family: "Open Sans";
-  font-weight: bold;
-  font-size: 16pt;
-  color: #aaa6fc;
+}
+body .master-div .four-cards .first-card {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  margin-bottom: 10%;
   position: relative;
 }
-@media (max-width: 500px) {
-  body .four-cards .sign-in img {
-    width: 85%;
-  }
-}
-body .four-cards .sign-in h1 {
+body .master-div .four-cards .first-card .left1 h1 {
   position: absolute;
-  top: 0;
-  padding-left: 30%;
+  top: 2%;
+  padding-left: 20%;
 }
 @media (max-width: 500px) {
-  body .four-cards .sign-in h1 {
+  body .master-div .four-cards .first-card .left1 h1 {
     padding-left: 15%;
     padding-top: 5%;
   }
 }
-body .four-cards .sign-in form {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20%;
+body .master-div .four-cards .first-card .left1 img {
+  height: 600px;
 }
-body .four-cards .sign-in form input {
-  border: none;
-  border-bottom: 1px solid black;
+body .master-div .four-cards .first-card .left1 h3 {
+  font-size: 12pt;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  width: 39%;
 }
-body .ce-desription {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5%;
-  margin-top: 5%;
+body .master-div .four-cards .first-card .right1 {
+  background-color: white;
+  height: 600px;
+  width: 800px;
 }
-body .ce-desription .brief-description {
-  width: 40%;
-}
-body .ce-desription .no-account {
+body .master-div .four-cards .first-card .right1 button {
   font-family: "Open Sans";
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 25pt;
+  color: white;
+  background-color: #ac73ff;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
+body .master-div .four-cards .first-card .right1 .no-account {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
   color: #aaa6fc;
 }
 @media (max-width: 500px) {
-  body .ce-desription .no-account {
+  body .master-div .four-cards .first-card .right1 .no-account {
     font-size: 8pt;
   }
 }
-body .ce-desription .no-account p {
-  margin-left: 68%;
+body .master-div .four-cards .first-card .right1 .no-account h3 {
+  font-size: 12pt;
+}
+body .master-div .four-cards .first-card .right1 .no-account p {
+  color: #aaa6fc;
+  font-size: 14pt;
+  font-family: "Open Sans";
+  font-weight: bold;
 }
 @media (max-width: 500px) {
-  body .ce-desription .no-account p {
+  body .master-div .four-cards .first-card .right1 .no-account p {
     font-size: 10pt;
     margin-left: 60%;
   }
 }
-body .card2,
-body .card3,
-body .card4 {
+body .master-div .four-cards .card2 {
   display: flex;
   align-items: center;
+  margin-bottom: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
-@media (max-width: 500px) {
-  body .card2 .card-images,
-  body .card3 .card-images,
-  body .card4 .card-images {
-    width: 100%;
-  }
+body .master-div .four-cards .card2 .cardimage2 {
+  height: 600px;
 }
-body .card2 .landing-content,
-body .card3 .landing-content,
-body .card4 .landing-content {
+body .master-div .four-cards .card2 .landing-content {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70%;
+  height: 600px;
+  width: 800px;
 }
 @media (max-width: 500px) {
-  body .card2 .landing-content,
-  body .card3 .landing-content,
-  body .card4 .landing-content {
+  body .master-div .four-cards .card2 .landing-content {
     width: 120%;
     height: 120%;
     padding-left: 2%;
     padding-right: 2%;
   }
 }
-body .card2 .landing-content img,
-body .card3 .landing-content img,
-body .card4 .landing-content img {
+body .master-div .four-cards .card2 .landing-content img {
   margin-top: 20%;
 }
 @media (max-width: 500px) {
-  body .card2 .landing-content img,
-  body .card3 .landing-content img,
-  body .card4 .landing-content img {
+  body .master-div .four-cards .card2 .landing-content img {
     width: 30%;
   }
 }
-body .card2 .landing-content h2,
-body .card3 .landing-content h2,
-body .card4 .landing-content h2 {
+body .master-div .four-cards .card2 .landing-content h2 {
   margin-top: 10%;
 }
-body .card2 .landing-content h3,
-body .card3 .landing-content h3,
-body .card4 .landing-content h3 {
+body .master-div .four-cards .card2 .landing-content h3 {
   margin-top: 10%;
   width: 80%;
 }
 @media (max-width: 500px) {
-  body .card2 .landing-content h3,
-  body .card3 .landing-content h3,
-  body .card4 .landing-content h3 {
+  body .master-div .four-cards .card2 .landing-content h3 {
+    height: 90%;
+    width: 100%;
+  }
+}
+body .master-div .four-cards .card3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+body .master-div .four-cards .card3 .cardimage3 {
+  height: 600px;
+}
+body .master-div .four-cards .card3 .landing-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card3 .landing-content {
+    width: 120%;
+    height: 120%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+body .master-div .four-cards .card3 .landing-content img {
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card3 .landing-content img {
+    width: 30%;
+  }
+}
+body .master-div .four-cards .card3 .landing-content h2 {
+  margin-top: 10%;
+}
+body .master-div .four-cards .card3 .landing-content h3 {
+  margin-top: 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card3 .landing-content h3 {
+    height: 90%;
+    width: 100%;
+  }
+}
+body .master-div .four-cards .card4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+body .master-div .four-cards .card4 .cardimage4 {
+  height: 600px;
+}
+body .master-div .four-cards .card4 .landing-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card4 .landing-content {
+    width: 120%;
+    height: 120%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+body .master-div .four-cards .card4 .landing-content img {
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card4 .landing-content img {
+    width: 30%;
+  }
+}
+body .master-div .four-cards .card4 .landing-content h2 {
+  margin-top: 10%;
+}
+body .master-div .four-cards .card4 .landing-content h3 {
+  margin-top: 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards .card4 .landing-content h3 {
     height: 90%;
     width: 100%;
   }
