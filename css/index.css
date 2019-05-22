@@ -129,11 +129,25 @@ table {
 body {
   background-color: #f0feff;
 }
-body .header h1 {
+body .header-about {
+  display: flex;
+}
+body .header-about nav {
+  margin-top: 1%;
+  margin-left: 35%;
+}
+body .header-about nav a {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16pt;
+  color: #aaa6fc;
+  padding: 0 20px 0px;
+}
+body .headline h1 {
   font-size: 35pt;
   font-weight: bold;
   color: #5c6370;
-  margin-left: 35%;
+  text-aling: center;
 }
 body .about-us {
   margin-top: 4%;
