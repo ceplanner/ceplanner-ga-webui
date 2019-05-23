@@ -1,16 +1,34 @@
 body {
+  @media (max-width: 500px) {
+    max-width: 500px;
+  }
   background-color: #f0feff;
   .header-about {
     display: flex;
+
+    .logo-about {
+      @media (max-width: 500px) {
+        width: 100px;
+        height: 40px;
+        margin-left: 1%;
+      }
+    }
     nav {
-      margin-top: 1%;
-      margin-left: 35%;
+      margin-top: 2%;
+      margin-left: 45%;
+      @media (max-width: 500px) {
+        margin-left: 25%;
+      }
       a {
         font-family: "Open Sans";
         font-weight: bold;
         font-size: 16pt;
         color: #aaa6fc;
         padding: 0 20px 0px;
+        @media (max-width: 500px) {
+          font-size: 10pt;
+          padding: 0 5px 0px;
+        }
       }
     }
   }
@@ -20,10 +38,17 @@ body {
       font-weight: bold;
       color: #5c6370;
       text-aling: center;
+      @media (max-width: 500px) {
+        font-size: 20pt;
+        margin-top: 6%;
+      }
     }
   }
   .about-us {
     margin-top: 4%;
+    @media (max-width: 500px) {
+      margin-top: 6%;
+    }
   }
   .team-member {
     margin-left: 30%;
@@ -35,12 +60,20 @@ body {
     height: 65px;
     width: 40%;
     overflow: hidden;
+    @media (max-width: 500px) {
+      height: 60px;
+      width: 50%;
+      margin-left: 23%;
+    }
 
     h2 {
       font-size: 25pt;
       font-weight: 600;
       color: #737c8c;
       text-align: center;
+      @media (max-width: 500px) {
+        font-size: 15pt;
+      }
     }
 
     .role {
@@ -50,6 +83,10 @@ body {
       font-size: 14pt;
       font-weight: 600;
       color: #737c8c;
+      @media (max-width: 500px) {
+        font-size: 10pt;
+        margin-top: 5%;
+      }
     }
 
     p {
@@ -59,6 +96,9 @@ body {
       font-size: 10pt;
       font-weight: 600;
       color: #737c8c;
+      @media (max-width: 500px) {
+        margin-top: 7%;
+      }
     }
 
     .close {
@@ -78,6 +118,10 @@ body {
       cursor: pointer;
       transform: translate(-50%);
       background-color: white;
+      @media (max-width: 500px) {
+        font-size: 9.5pt;
+        margin-top: 1.5%;
+      }
     }
   }
 

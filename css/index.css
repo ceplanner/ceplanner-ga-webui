@@ -129,12 +129,29 @@ table {
 body {
   background-color: #f0feff;
 }
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
+}
 body .header-about {
   display: flex;
 }
+@media (max-width: 500px) {
+  body .header-about .logo-about {
+    width: 100px;
+    height: 40px;
+    margin-left: 1%;
+  }
+}
 body .header-about nav {
-  margin-top: 1%;
-  margin-left: 35%;
+  margin-top: 2%;
+  margin-left: 45%;
+}
+@media (max-width: 500px) {
+  body .header-about nav {
+    margin-left: 25%;
+  }
 }
 body .header-about nav a {
   font-family: "Open Sans";
@@ -143,14 +160,31 @@ body .header-about nav a {
   color: #aaa6fc;
   padding: 0 20px 0px;
 }
+@media (max-width: 500px) {
+  body .header-about nav a {
+    font-size: 10pt;
+    padding: 0 5px 0px;
+  }
+}
 body .headline h1 {
   font-size: 35pt;
   font-weight: bold;
   color: #5c6370;
   text-aling: center;
 }
+@media (max-width: 500px) {
+  body .headline h1 {
+    font-size: 20pt;
+    margin-top: 6%;
+  }
+}
 body .about-us {
   margin-top: 4%;
+}
+@media (max-width: 500px) {
+  body .about-us {
+    margin-top: 6%;
+  }
 }
 body .team-member {
   margin-left: 30%;
@@ -163,11 +197,23 @@ body .team-member {
   width: 40%;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  body .team-member {
+    height: 60px;
+    width: 50%;
+    margin-left: 23%;
+  }
+}
 body .team-member h2 {
   font-size: 25pt;
   font-weight: 600;
   color: #737c8c;
   text-align: center;
+}
+@media (max-width: 500px) {
+  body .team-member h2 {
+    font-size: 15pt;
+  }
 }
 body .team-member .role {
   margin-top: 2%;
@@ -177,6 +223,12 @@ body .team-member .role {
   font-weight: 600;
   color: #737c8c;
 }
+@media (max-width: 500px) {
+  body .team-member .role {
+    font-size: 10pt;
+    margin-top: 5%;
+  }
+}
 body .team-member p {
   margin-top: 5%;
   margin-left: 1%;
@@ -184,6 +236,11 @@ body .team-member p {
   font-size: 10pt;
   font-weight: 600;
   color: #737c8c;
+}
+@media (max-width: 500px) {
+  body .team-member p {
+    margin-top: 7%;
+  }
 }
 body .team-member .close {
   position: absolute;
@@ -202,6 +259,12 @@ body .team-member .expandButton {
   transform: translate(-50%);
   background-color: white;
 }
+@media (max-width: 500px) {
+  body .team-member .expandButton {
+    font-size: 9.5pt;
+    margin-top: 1.5%;
+  }
+}
 body .team-member-open {
   height: 158px;
 }
@@ -215,6 +278,11 @@ body {
   font-family: "Open Sans";
   background-color: #f0feff;
   max-width: 100%;
+}
+@media (max-width: 500px) {
+  body {
+    max-width: 500px;
+  }
 }
 body h1 {
   font-size: 35pt;
@@ -249,25 +317,28 @@ body h3 {
 }
 body .header {
   display: flex;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  body .header {
+    max-width: 500px;
+  }
 }
 @media (max-width: 500px) {
   body .header .logo {
     width: 24%;
     margin-left: 1%;
-  }
-}
-@media (max-width: 500px) {
-  body .header {
-    max-width: 100%;
+    height: 15%;
+    margin-top: 2%;
   }
 }
 body .header nav {
   margin-top: 2%;
-  margin-left: 28%;
+  margin-left: 40%;
 }
 @media (max-width: 500px) {
   body .header nav {
-    margin-left: 13%;
+    margin-left: 25%;
     margin-top: 4%;
     padding-right: 1%;
   }
@@ -287,6 +358,11 @@ body .header nav a {
 }
 body .master-div {
   display: flex;
+}
+@media (max-width: 500px) {
+  body .master-div .four-buttons {
+    display: none;
+  }
 }
 body .master-div .four-buttons .b1 {
   position: fixed;
@@ -325,7 +401,7 @@ body .master-div .four-cards {
   align-items: center;
 }
 body .master-div .four-cards #first-card {
-  margin-left: 10%;
+  margin-left: 15%;
   width: 80%;
   display: flex;
   margin-bottom: 10%;
@@ -333,7 +409,10 @@ body .master-div .four-cards #first-card {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #first-card {
-    margin-left: 1%;
+    margin-right: 10%;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 4%;
   }
 }
 body .master-div .four-cards #first-card .left1 h1 {
@@ -341,8 +420,19 @@ body .master-div .four-cards #first-card .left1 h1 {
   top: 2%;
   padding-left: 20%;
 }
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .left1 h1 {
+    font-size: 17pt;
+  }
+}
 body .master-div .four-cards #first-card .left1 img {
   height: 600px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .left1 img {
+    height: 300px;
+    width: 200px;
+  }
 }
 body .master-div .four-cards #first-card .left1 h3 {
   font-size: 12pt;
@@ -351,10 +441,21 @@ body .master-div .four-cards #first-card .left1 h3 {
   left: 2%;
   width: 39%;
 }
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .left1 h3 {
+    font-size: 7pt;
+  }
+}
 body .master-div .four-cards #first-card .right1 {
   background-color: white;
   height: 600px;
   width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .right1 {
+    height: 300px;
+    width: 800px;
+  }
 }
 body .master-div .four-cards #first-card .right1 button {
   font-family: "Open Sans";
@@ -366,19 +467,26 @@ body .master-div .four-cards #first-card .right1 button {
   right: 20%;
   top: 50%;
 }
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .right1 button {
+    font-size: 12.5pt;
+    top: 40%;
+    right: 15%;
+  }
+}
 body .master-div .four-cards #first-card .right1 .no-account {
   position: absolute;
   bottom: 5%;
   right: 2%;
   color: #aaa6fc;
 }
-@media (max-width: 500px) {
-  body .master-div .four-cards #first-card .right1 .no-account {
-    font-size: 8pt;
-  }
-}
 body .master-div .four-cards #first-card .right1 .no-account h3 {
   font-size: 12pt;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .right1 .no-account h3 {
+    font-size: 7pt;
+  }
 }
 body .master-div .four-cards #first-card .right1 .no-account nav a {
   color: #aaa6fc;
@@ -389,8 +497,7 @@ body .master-div .four-cards #first-card .right1 .no-account nav a {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #first-card .right1 .no-account nav a {
-    font-size: 10pt;
-    margin-left: 60%;
+    font-size: 9pt;
   }
 }
 body .master-div .four-cards #card2 {
@@ -398,10 +505,23 @@ body .master-div .four-cards #card2 {
   align-items: center;
   margin-bottom: 10%;
   width: 80%;
-  margin-left: 10%;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 {
+    max-width: 500px;
+    margin-right: 10%;
+    width: 80%;
+  }
 }
 body .master-div .four-cards #card2 .cardimage2 {
   height: 600px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 .cardimage2 {
+    height: 300px;
+    width: 200px;
+  }
 }
 body .master-div .four-cards #card2 .landing-content {
   background-color: white;
@@ -413,10 +533,8 @@ body .master-div .four-cards #card2 .landing-content {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card2 .landing-content {
-    width: 120%;
-    height: 120%;
-    padding-left: 2%;
-    padding-right: 2%;
+    height: 300px;
+    width: 800px;
   }
 }
 body .master-div .four-cards #card2 .landing-content img {
@@ -424,11 +542,16 @@ body .master-div .four-cards #card2 .landing-content img {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card2 .landing-content img {
-    width: 30%;
+    width: 20%;
   }
 }
 body .master-div .four-cards #card2 .landing-content h2 {
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 .landing-content h2 {
+    font-size: 12pt;
+  }
 }
 body .master-div .four-cards #card2 .landing-content h3 {
   margin-top: 10%;
@@ -436,19 +559,31 @@ body .master-div .four-cards #card2 .landing-content h3 {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card2 .landing-content h3 {
-    height: 90%;
-    width: 100%;
+    font-size: 10pt;
   }
 }
 body .master-div .four-cards #card3 {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
   width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 {
+    max-width: 500px;
+    margin-right: 10%;
+    width: 80%;
+  }
 }
 body .master-div .four-cards #card3 .cardimage3 {
   height: 600px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 .cardimage3 {
+    height: 300px;
+    width: 200px;
+  }
 }
 body .master-div .four-cards #card3 .landing-content {
   background-color: white;
@@ -460,10 +595,8 @@ body .master-div .four-cards #card3 .landing-content {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card3 .landing-content {
-    width: 120%;
-    height: 120%;
-    padding-left: 2%;
-    padding-right: 2%;
+    height: 300px;
+    width: 800px;
   }
 }
 body .master-div .four-cards #card3 .landing-content img {
@@ -471,11 +604,16 @@ body .master-div .four-cards #card3 .landing-content img {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card3 .landing-content img {
-    width: 30%;
+    width: 20%;
   }
 }
 body .master-div .four-cards #card3 .landing-content h2 {
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 .landing-content h2 {
+    font-size: 12pt;
+  }
 }
 body .master-div .four-cards #card3 .landing-content h3 {
   margin-top: 10%;
@@ -483,19 +621,31 @@ body .master-div .four-cards #card3 .landing-content h3 {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card3 .landing-content h3 {
-    height: 90%;
-    width: 100%;
+    font-size: 10pt;
   }
 }
 body .master-div .four-cards #card4 {
   display: flex;
   align-items: center;
   margin-bottom: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
   width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 {
+    max-width: 500px;
+    margin-right: 10%;
+    width: 80%;
+  }
 }
 body .master-div .four-cards #card4 .cardimage4 {
   height: 600px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 .cardimage4 {
+    height: 300px;
+    width: 200px;
+  }
 }
 body .master-div .four-cards #card4 .landing-content {
   background-color: white;
@@ -507,10 +657,8 @@ body .master-div .four-cards #card4 .landing-content {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card4 .landing-content {
-    width: 120%;
-    height: 120%;
-    padding-left: 2%;
-    padding-right: 2%;
+    height: 300px;
+    width: 800px;
   }
 }
 body .master-div .four-cards #card4 .landing-content img {
@@ -518,11 +666,16 @@ body .master-div .four-cards #card4 .landing-content img {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card4 .landing-content img {
-    width: 30%;
+    width: 20%;
   }
 }
 body .master-div .four-cards #card4 .landing-content h2 {
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 .landing-content h2 {
+    font-size: 12pt;
+  }
 }
 body .master-div .four-cards #card4 .landing-content h3 {
   margin-top: 10%;
@@ -530,8 +683,7 @@ body .master-div .four-cards #card4 .landing-content h3 {
 }
 @media (max-width: 500px) {
   body .master-div .four-cards #card4 .landing-content h3 {
-    height: 90%;
-    width: 100%;
+    font-size: 10pt;
   }
 }
 body footer {
@@ -539,7 +691,8 @@ body footer {
 }
 @media (max-width: 500px) {
   body footer {
-    padding-top: 5%;
+    max-width: 500px;
+    margin-bottom: 0%;
   }
 }
 body footer img {
@@ -547,13 +700,16 @@ body footer img {
 }
 @media (max-width: 500px) {
   body footer img {
-    width: 60%;
-    padding-bottom: 15px;
+    width: 34%;
+    margin-left: 1.5%;
+    height: 45%;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 500px) {
   body footer .social-media img {
-    width: 10%;
+    width: 7%;
+    margin-bottom: 0%;
   }
 }
 body footer .social-media a {
@@ -572,8 +728,9 @@ body footer p {
 }
 @media (max-width: 500px) {
   body footer p {
-    margin-left: 1%;
-    margin-top: 20%;
+    margin-left: 10%;
+    margin-top: 10%;
     font-size: 10pt;
+    width: 60%;
   }
 }
