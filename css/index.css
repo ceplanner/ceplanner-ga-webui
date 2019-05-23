@@ -371,6 +371,7 @@ body .master-div .four-buttons .b1 {
   padding: 6px 6px;
   background-color: #ac73ff;
   margin-bottom: 2%;
+  left: 10px;
 }
 body .master-div .four-buttons .b2 {
   position: fixed;
