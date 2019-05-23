@@ -16,22 +16,20 @@
       <nav>
         <a href="#">Home</a>
         <a href="about.html">About Us</a>
-        <a href="#">Sign In</a>
-        <a href="#">Sign Up</a>
+        <a href="https://ceplanner.herokuapp.com/login">Sign In</a>
+        <a href="https://ceplanner.herokuapp.com/Signup">Sign Up</a>
         <a href="#">Contact Us</a>
       </nav>
     </div>
     <div class="master-div">
-      <div class="4buttons">
-        <p>
-          1 <br />
-          2 <br />
-          3 <br />
-          4
-        </p>
+      <div class="four-buttons">
+        <a href="#first-card"><button class="b1"></button></a> <br />
+        <a href="#card2"><button class="b2"></button></a> <br />
+        <a href="#card3"><button class="b3"></button></a> <br />
+        <a href="#card4"><button class="b4"></button></a>
       </div>
       <div class="four-cards">
-        <div class="first-card">
+        <div id="first-card">
           <div class="left1">
             <h1>A Way to a Successful Event</h1>
             <img src="assets/Image-winner.png" alt="Winner Image" />
@@ -43,18 +41,22 @@
             </div>
           </div>
           <div class="right1">
-            <button>Sign In</button>
+            <a href="https://ceplanner.herokuapp.com/login"
+              ><button>Sign In</button></a
+            >
             <div class="no-account">
               <h3>
                 Do not have an account?
               </h3>
               <br />
-              <p>Sign Up</p>
+              <nav>
+                <a href="https://ceplanner.herokuapp.com/Signup">Sign Up</a>
+              </nav>
             </div>
           </div>
         </div>
 
-        <div class="card2">
+        <div id="card2">
           <div class="landing-content">
             <img src="assets/Icons/paperclip.png" alt="Paper Clip" />
             <h2>
@@ -76,7 +78,7 @@
           </div>
         </div>
 
-        <div class="card3">
+        <div id="card3">
           <img class="cardimage3" src="assets/Image-stats.png" alt="Stats" />
 
           <div class="landing-content">
@@ -93,7 +95,7 @@
           </div>
         </div>
 
-        <div class="card4">
+        <div id="card4">
           <div class="landing-content">
             <img src="assets/Icons/comments-alt.png" alt="Comments" />
             <h2>
