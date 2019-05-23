@@ -1,0 +1,579 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: #f0feff;
+}
+body .header-about {
+  display: flex;
+}
+body .header-about nav {
+  margin-top: 1%;
+  margin-left: 35%;
+}
+body .header-about nav a {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16pt;
+  color: #aaa6fc;
+  padding: 0 20px 0px;
+}
+body .headline h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  color: #5c6370;
+  text-aling: center;
+}
+body .about-us {
+  margin-top: 4%;
+}
+body .team-member {
+  margin-left: 30%;
+  margin-bottom: 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  height: 65px;
+  width: 40%;
+  overflow: hidden;
+}
+body .team-member h2 {
+  font-size: 25pt;
+  font-weight: 600;
+  color: #737c8c;
+  text-align: center;
+}
+body .team-member .role {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  font-size: 14pt;
+  font-weight: 600;
+  color: #737c8c;
+}
+body .team-member p {
+  margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 10pt;
+  font-weight: 600;
+  color: #737c8c;
+}
+body .team-member .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+body .team-member .expandButton {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 10pt;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%);
+  background-color: white;
+}
+body .team-member-open {
+  height: 158px;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+body {
+  font-family: "Open Sans";
+  background-color: #f0feff;
+  max-width: 100%;
+}
+body h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  color: #5c6370;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  body h1 {
+    font-size: 20pt;
+  }
+}
+body h2 {
+  font-size: 25pt;
+  font-weight: 600;
+  color: #737c8c;
+}
+@media (max-width: 500px) {
+  body h2 {
+    font-size: 12pt;
+  }
+}
+body h3 {
+  font-size: 18pt;
+  font-weight: 600;
+  color: #737c8c;
+}
+@media (max-width: 500px) {
+  body h3 {
+    font-size: 12pt;
+  }
+}
+body .header {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body .header .logo {
+    width: 24%;
+    margin-left: 1%;
+  }
+}
+@media (max-width: 500px) {
+  body .header {
+    max-width: 100%;
+  }
+}
+body .header nav {
+  margin-top: 2%;
+  margin-left: 28%;
+}
+@media (max-width: 500px) {
+  body .header nav {
+    margin-left: 13%;
+    margin-top: 4%;
+    padding-right: 1%;
+  }
+}
+body .header nav a {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16pt;
+  color: #aaa6fc;
+  padding: 0 30px 0px;
+}
+@media (max-width: 500px) {
+  body .header nav a {
+    padding: 0 3px 0px;
+    font-size: 10pt;
+  }
+}
+body .master-div {
+  display: flex;
+}
+body .master-div .four-buttons .b1 {
+  position: fixed;
+  top: 25%;
+  border-radius: 100%;
+  padding: 6px 6px;
+  background-color: #ac73ff;
+  margin-bottom: 2%;
+}
+body .master-div .four-buttons .b2 {
+  position: fixed;
+  top: 30%;
+  border-radius: 100%;
+  padding: 6px 6px;
+  background-color: #ac73ff;
+  margin-bottom: 2%;
+}
+body .master-div .four-buttons .b3 {
+  position: fixed;
+  top: 35%;
+  border-radius: 100%;
+  padding: 6px 6px;
+  background-color: #ac73ff;
+  margin-bottom: 2%;
+}
+body .master-div .four-buttons .b4 {
+  position: fixed;
+  top: 40%;
+  border-radius: 100%;
+  padding: 6px 6px;
+  background-color: #ac73ff;
+}
+body .master-div .four-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .master-div .four-cards #first-card {
+  margin-left: 10%;
+  width: 80%;
+  display: flex;
+  margin-bottom: 10%;
+  position: relative;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card {
+    margin-left: 1%;
+  }
+}
+body .master-div .four-cards #first-card .left1 h1 {
+  position: absolute;
+  top: 2%;
+  padding-left: 20%;
+}
+body .master-div .four-cards #first-card .left1 img {
+  height: 600px;
+}
+body .master-div .four-cards #first-card .left1 h3 {
+  font-size: 12pt;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  width: 39%;
+}
+body .master-div .four-cards #first-card .right1 {
+  background-color: white;
+  height: 600px;
+  width: 800px;
+}
+body .master-div .four-cards #first-card .right1 button {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 25pt;
+  color: white;
+  background-color: #ac73ff;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+}
+body .master-div .four-cards #first-card .right1 .no-account {
+  position: absolute;
+  bottom: 5%;
+  right: 2%;
+  color: #aaa6fc;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .right1 .no-account {
+    font-size: 8pt;
+  }
+}
+body .master-div .four-cards #first-card .right1 .no-account h3 {
+  font-size: 12pt;
+}
+body .master-div .four-cards #first-card .right1 .no-account nav a {
+  color: #aaa6fc;
+  font-size: 14pt;
+  font-family: "Open Sans";
+  font-weight: bold;
+  margin-left: 60%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #first-card .right1 .no-account nav a {
+    font-size: 10pt;
+    margin-left: 60%;
+  }
+}
+body .master-div .four-cards #card2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 80%;
+  margin-left: 10%;
+}
+body .master-div .four-cards #card2 .cardimage2 {
+  height: 600px;
+}
+body .master-div .four-cards #card2 .landing-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 .landing-content {
+    width: 120%;
+    height: 120%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+body .master-div .four-cards #card2 .landing-content img {
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 .landing-content img {
+    width: 30%;
+  }
+}
+body .master-div .four-cards #card2 .landing-content h2 {
+  margin-top: 10%;
+}
+body .master-div .four-cards #card2 .landing-content h3 {
+  margin-top: 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card2 .landing-content h3 {
+    height: 90%;
+    width: 100%;
+  }
+}
+body .master-div .four-cards #card3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+body .master-div .four-cards #card3 .cardimage3 {
+  height: 600px;
+}
+body .master-div .four-cards #card3 .landing-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 .landing-content {
+    width: 120%;
+    height: 120%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+body .master-div .four-cards #card3 .landing-content img {
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 .landing-content img {
+    width: 30%;
+  }
+}
+body .master-div .four-cards #card3 .landing-content h2 {
+  margin-top: 10%;
+}
+body .master-div .four-cards #card3 .landing-content h3 {
+  margin-top: 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card3 .landing-content h3 {
+    height: 90%;
+    width: 100%;
+  }
+}
+body .master-div .four-cards #card4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+body .master-div .four-cards #card4 .cardimage4 {
+  height: 600px;
+}
+body .master-div .four-cards #card4 .landing-content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 .landing-content {
+    width: 120%;
+    height: 120%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+body .master-div .four-cards #card4 .landing-content img {
+  margin-top: 20%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 .landing-content img {
+    width: 30%;
+  }
+}
+body .master-div .four-cards #card4 .landing-content h2 {
+  margin-top: 10%;
+}
+body .master-div .four-cards #card4 .landing-content h3 {
+  margin-top: 10%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  body .master-div .four-cards #card4 .landing-content h3 {
+    height: 90%;
+    width: 100%;
+  }
+}
+body footer {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body footer {
+    padding-top: 5%;
+  }
+}
+body footer img {
+  padding-bottom: 40px;
+}
+@media (max-width: 500px) {
+  body footer img {
+    width: 60%;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  body footer .social-media img {
+    width: 10%;
+  }
+}
+body footer .social-media a {
+  padding-right: 40px;
+}
+@media (max-width: 500px) {
+  body footer .social-media a {
+    padding-right: 10px;
+  }
+}
+body footer p {
+  margin-left: 60%;
+  margin-top: 10%;
+  font-weight: 600;
+  color: #737c8c;
+}
+@media (max-width: 500px) {
+  body footer p {
+    margin-left: 1%;
+    margin-top: 20%;
+    font-size: 10pt;
+  }
+}
